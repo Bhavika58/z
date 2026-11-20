@@ -1,15 +1,19 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dashboard | KL Learning Management System</title>
-  <meta name="description" content="KL University Moodle dashboard with course timeline, recently accessed items and navigation.">
+  <title>Dashboard | KL LMS Simulation</title>
+  <meta name="description" content="KL University LMS educational simulation dashboard.">
+
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23990000'/%3E%3Ctext x='16' y='23' font-family='Arial' font-size='15' font-weight='bold' fill='%23fff' text-anchor='middle'%3EKL%3C/text%3E%3C/svg%3E">
-  <link rel="preload" href="fonts/OpenSans-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="styles.css">
-  <script src="app.js" defer></script>
+
+  <link rel="preload" href="./OpenSans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
 </head>
+
 <body class="page-dashboard">
   <a class="skip-link" href="#main">Skip to content</a>
 
@@ -63,22 +67,37 @@
   <header class="site-header">
     <div class="user-bar">
       <svg class="icon user-bar__bell" aria-hidden="true"><use href="#i-bell"></use></svg>
-      <span class="user-bar__name"><span class="js-username">PENDELA NAGA ABHINAY 2300080175</span></span>
-      <a class="user-avatar js-logout" href="index.html" title="Log out" aria-label="P2 — Log out">P2</a>
+      <span class="user-bar__name"><span class="js-username">Demo Student</span></span>
+      <a class="user-avatar js-logout" href="./index.html" title="Log out" aria-label="Log out">DS</a>
     </div>
+
     <div class="logo-row">
-      <a href="dashboard.html" aria-label="KL Learning Management System — dashboard">
-        <img class="kl-logo" src="assets/kl.png" width="209" height="63" alt="KL Deemed to be University">
+      <a href="./dashboard.html" aria-label="KL LMS Simulation dashboard">
+        <img class="kl-logo" src="./kl.png" width="209" height="63" alt="KL Deemed to be University">
       </a>
     </div>
   </header>
 
+  <div style="text-align:center;background:#fff3cd;color:#664d03;padding:9px 15px;font:600 13px Arial,sans-serif;">
+    Educational LMS Simulation — Not the official KL University website
+  </div>
+
+  <div class="dashboard-banner" style="padding:12px 16px;text-align:center;">
+    <img
+      src="./klu-banner.jpg"
+      width="698"
+      height="54"
+      alt="KL University educational banner"
+      style="display:block;width:100%;max-width:698px;height:auto;margin:0 auto;"
+    >
+  </div>
+
   <nav class="navbar" aria-label="Main navigation">
     <div class="nav-inner">
       <ul class="nav-links">
-        <li class="is-active"><a href="dashboard.html" aria-current="page">Home</a></li>
-        <li><a href="dashboard.html">Dashboard</a></li>
-        <li><a href="course.html">My courses</a></li>
+        <li class="is-active"><a href="./dashboard.html" aria-current="page">Home</a></li>
+        <li><a href="./dashboard.html">Dashboard</a></li>
+        <li><a href="./course.html">My courses</a></li>
         <li class="nav-help">
           <details>
             <summary aria-haspopup="true">Help <svg class="caret" aria-hidden="true"><use href="#i-caret"></use></svg></summary>
@@ -118,6 +137,7 @@
             </span>
             <h2 class="block-title" id="timeline-title">Timeline</h2>
           </div>
+
           <div class="block-body">
             <div class="timeline-controls">
               <button class="timeline-clock" type="button" aria-label="Timeline display options">
@@ -243,7 +263,7 @@
                 <div class="event__main">
                   <p class="event__meta">TOTAL QUALITY MANAGEMENT 2026-2027 ODD SEMESTER</p>
                   <p class="event__title">END SEM-CO-1 - 9:30 AM TO 11:10 AM--20-11-26 CLOSES</p>
-                  <a class="event__action" href="quiz.html?quiz=END%20SEM-CO-1&co=CO1">Attempt quiz now</a>
+                  <a class="event__action" href="./quiz.html?quiz=END%20SEM-CO-1&amp;co=CO1">Attempt quiz now</a>
                 </div>
                 <span class="event__time">11:10</span>
               </article>
@@ -253,7 +273,7 @@
                 <div class="event__main">
                   <p class="event__meta">TOTAL QUALITY MANAGEMENT 2026-2027 ODD SEMESTER</p>
                   <p class="event__title">END SEM-CO-2 - 9:30 AM TO 11:10 AM--20-11-26 CLOSES</p>
-                  <a class="event__action" href="quiz.html?quiz=END%20SEM-CO-2&co=CO2">Attempt quiz now</a>
+                  <a class="event__action" href="./quiz.html?quiz=END%20SEM-CO-2&amp;co=CO2">Attempt quiz now</a>
                 </div>
                 <span class="event__time">11:10</span>
               </article>
@@ -263,7 +283,7 @@
                 <div class="event__main">
                   <p class="event__meta">TOTAL QUALITY MANAGEMENT 2026-2027 ODD SEMESTER</p>
                   <p class="event__title">END SEM-CO-3 - 9:30 AM TO 11:10 AM--20-11-26 CLOSES</p>
-                  <a class="event__action" href="quiz.html?quiz=END%20SEM-CO-3&co=CO3">Attempt quiz now</a>
+                  <a class="event__action" href="./quiz.html?quiz=END%20SEM-CO-3&amp;co=CO3">Attempt quiz now</a>
                 </div>
                 <span class="event__time">11:10</span>
               </article>
@@ -273,7 +293,7 @@
                 <div class="event__main">
                   <p class="event__meta">TOTAL QUALITY MANAGEMENT 2026-2027 ODD SEMESTER</p>
                   <p class="event__title">END SEM-CO-4 - 9:30 AM TO 11:10 AM--20-11-26 CLOSES</p>
-                  <a class="event__action" href="quiz.html?quiz=END%20SEM-CO-4&co=CO4">Attempt quiz now</a>
+                  <a class="event__action" href="./quiz.html?quiz=END%20SEM-CO-4&amp;co=CO4">Attempt quiz now</a>
                 </div>
                 <span class="event__time">11:10</span>
               </article>
@@ -292,8 +312,10 @@
             </span>
             <h2 class="block-title" id="recent-title">Recently accessed items</h2>
           </div>
+
           <div class="block-body">
             <div class="recent-grid">
+
               <a class="recent-item" href="#">
                 <span class="recent-tile" aria-hidden="true"><svg class="icon icon--lg"><use href="#i-quiz"></use></svg></span>
                 <span class="recent-text">
@@ -301,6 +323,7 @@
                   <span class="recent-course">ENERGY PRODUCTION, DISTRIBUTION AND SAFETY ...</span>
                 </span>
               </a>
+
               <a class="recent-item" href="#">
                 <span class="recent-tile" aria-hidden="true"><svg class="icon icon--lg"><use href="#i-quiz"></use></svg></span>
                 <span class="recent-text">
@@ -308,6 +331,7 @@
                   <span class="recent-course">ENERGY PRODUCTION, DISTRIBUTION AND SAFETY ...</span>
                 </span>
               </a>
+
               <a class="recent-item" href="#">
                 <span class="recent-tile" aria-hidden="true"><svg class="icon icon--lg"><use href="#i-quiz"></use></svg></span>
                 <span class="recent-text">
@@ -315,6 +339,7 @@
                   <span class="recent-course">ENERGY PRODUCTION, DISTRIBUTION AND SAFETY ...</span>
                 </span>
               </a>
+
               <a class="recent-item" href="#">
                 <span class="recent-tile" aria-hidden="true"><svg class="icon icon--lg"><use href="#i-quiz"></use></svg></span>
                 <span class="recent-text">
@@ -322,6 +347,7 @@
                   <span class="recent-course">ENERGY PRODUCTION, DISTRIBUTION AND SAFETY ...</span>
                 </span>
               </a>
+
               <a class="recent-item" href="#">
                 <span class="recent-tile" aria-hidden="true"><svg class="icon icon--lg"><use href="#i-quiz"></use></svg></span>
                 <span class="recent-text">
@@ -329,6 +355,7 @@
                   <span class="recent-course">ECOLOGY AND ENVIRONMENT 2026-2027 ODD SEM...</span>
                 </span>
               </a>
+
               <a class="recent-item" href="#">
                 <span class="recent-tile" aria-hidden="true"><svg class="icon icon--lg"><use href="#i-quiz"></use></svg></span>
                 <span class="recent-text">
@@ -336,6 +363,7 @@
                   <span class="recent-course">ECOLOGY AND ENVIRONMENT 2026-2027 ODD SEM...</span>
                 </span>
               </a>
+
               <a class="recent-item" href="#">
                 <span class="recent-tile" aria-hidden="true"><svg class="icon icon--lg"><use href="#i-quiz"></use></svg></span>
                 <span class="recent-text">
@@ -343,6 +371,7 @@
                   <span class="recent-course">ECOLOGY AND ENVIRONMENT 2026-2027 ODD SEM...</span>
                 </span>
               </a>
+
               <a class="recent-item" href="#">
                 <span class="recent-tile recent-tile--file" aria-hidden="true"><svg class="icon icon--lg"><use href="#i-file"></use></svg></span>
                 <span class="recent-text">
@@ -350,20 +379,22 @@
                   <span class="recent-course">INDIAN CONSTITUTION 2026-2027 ODD SEMESTER</span>
                 </span>
               </a>
-              <a class="recent-item recent-item--linked" href="quiz.html?quiz=END%20SEM-CO-1">
+
+              <a class="recent-item recent-item--linked" href="./quiz.html?quiz=END%20SEM-CO-1">
                 <span class="recent-tile" aria-hidden="true"><svg class="icon icon--lg"><use href="#i-quiz"></use></svg></span>
                 <span class="recent-text">
                   <span class="recent-title">END SEM CO-1</span>
                   <span class="recent-course">INDIAN CONSTITUTION 2026-2027 ODD SEMESTER</span>
                 </span>
               </a>
+
             </div>
+
             <div class="recent-more">
               <button class="btn btn-green btn-more" type="button">Show more items</button>
             </div>
           </div>
         </section>
-
       </div>
 
       <aside class="sidebar" aria-label="Navigation sidebar">
@@ -374,9 +405,12 @@
             </span>
             <h2 class="block-title" id="navigation-title">Navigation</h2>
           </div>
+
           <nav class="block-body side-nav" aria-label="Site navigation">
             <ul>
-              <li class="is-current"><a class="side-row" href="dashboard.html" aria-current="page">Dashboard</a></li>
+              <li class="is-current">
+                <a class="side-row" href="./dashboard.html" aria-current="page">Dashboard</a>
+              </li>
               <li>
                 <a class="side-row" href="#">
                   <span class="side-icon" aria-hidden="true"><svg class="icon"><use href="#i-home"></use></svg></span>
@@ -390,23 +424,23 @@
                 </a>
               </li>
               <li>
-                <a class="side-row side-row--branch side-row--open" href="course.html" aria-expanded="true">
+                <a class="side-row side-row--branch side-row--open" href="./course.html" aria-expanded="true">
                   <span class="side-toggle" aria-hidden="true"></span>
                   My courses
                 </a>
                 <ul>
-                  <li><a class="side-row" href="course.html">icpc2024</a></li>
-                  <li><a class="side-row" href="course.html">ECOLO- 23UC0009 2026-2027 ODD SEMESTER</a></li>
-                  <li><a class="side-row" href="course.html">SELF-OEEE4224M 2026-2027 ODD SEMESTER</a></li>
-                  <li><a class="side-row" href="course.html">ENER-OEEE4222M 2026-2027 ODD SEMESTER</a></li>
-                  <li><a class="side-row" href="course.html">ECOL-23UC0009 2026-2027 ODD SEMESTER</a></li>
-                  <li><a class="side-row" href="course.html">INTE-23UC1101 2023-2024 ODD SEMESTER</a></li>
-                  <li><a class="side-row" href="course.html">ENGI-23CY1001 2026-2027 ODD SEMESTER</a></li>
-                  <li><a class="side-row" href="course.html">INDI-23UC0008 2026-2027 ODD SEMESTER</a></li>
-                  <li><a class="side-row" href="course.html">INDU-23IE4051 2026-2027 ODD SEMESTER</a></li>
-                  <li><a class="side-row" href="course.html">EDGE-23CEC3510 2026-2027 ODD SEMESTER</a></li>
+                  <li><a class="side-row" href="./course.html">icpc2024</a></li>
+                  <li><a class="side-row" href="./course.html">ECOLO- 23UC0009 2026-2027 ODD SEMESTER</a></li>
+                  <li><a class="side-row" href="./course.html">SELF-OEEE4224M 2026-2027 ODD SEMESTER</a></li>
+                  <li><a class="side-row" href="./course.html">ENER-OEEE4222M 2026-2027 ODD SEMESTER</a></li>
+                  <li><a class="side-row" href="./course.html">ECOL-23UC0009 2026-2027 ODD SEMESTER</a></li>
+                  <li><a class="side-row" href="./course.html">INTE-23UC1101 2023-2024 ODD SEMESTER</a></li>
+                  <li><a class="side-row" href="./course.html">ENGI-23CY1001 2026-2027 ODD SEMESTER</a></li>
+                  <li><a class="side-row" href="./course.html">INDI-23UC0008 2026-2027 ODD SEMESTER</a></li>
+                  <li><a class="side-row" href="./course.html">INDU-23IE4051 2026-2027 ODD SEMESTER</a></li>
+                  <li><a class="side-row" href="./course.html">EDGE-23CEC3510 2026-2027 ODD SEMESTER</a></li>
                   <li>
-                    <a class="side-row side-row--branch side-row--marker" href="course.html">
+                    <a class="side-row side-row--branch side-row--marker" href="./course.html">
                       <span class="side-marker" aria-hidden="true"></span>
                       More...
                     </a>
@@ -427,14 +461,14 @@
   </main>
 
   <footer class="site-footer">
-    <a href="#">
+    <span>
       <svg class="icon" aria-hidden="true"><use href="#i-home"></use></svg>
-      www.kluniversity.in
-    </a>
-    <a href="#">
+      KL LMS Educational Simulation
+    </span>
+    <span>
       <svg class="icon" aria-hidden="true"><use href="#i-envelope"></use></svg>
-      moodle@kluniversity.in
-    </a>
+      Demo interface — no official university affiliation
+    </span>
   </footer>
 </body>
 </html>
